@@ -1,0 +1,150 @@
+@import url('https: //fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    background-color: var(--cor-primaria);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #1b273f;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #ff459f;
+    --cor-hover: #ff459f;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.apresentacao__btn {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    color: var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1.5rem 0;
+    font-weight: 600;
+    border: .12rem solid var(--cor-hover);
+
+}
+
+ion-icon[name="logo-github"]{
+    color: var(--cor-terciaria);
+}
+
+ion-icon[name="logo-linkedin"]{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__btn:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    transition: 1.5s;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.apresentacao__btn img {
+    width: 1.8rem;
+}
+
+.rodape p {
+    padding: 2rem;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
